@@ -4,6 +4,9 @@ import axios from 'axios'
 export default function FetchData() {
     const [data, setData] = useState([])
 
+    
+    
+
     useEffect(()=>{
         axios.get('http://localhost:8000/heroes/get')
         .then(response=>{
